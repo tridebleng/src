@@ -250,7 +250,7 @@ echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 cat> /etc/issue.net << END
 <font color="red"><b>============================</b></font><br> 
-<font color="white"><b>        RIDWAN-STORE         </b></font><br> 
+<font color="white"><b>         JANDA_BAHENOL         </b></font><br> 
 <font color="red"><b>============================</b></font>
 END
 
@@ -288,12 +288,6 @@ wget -O asu "https://raw.githubusercontent.com/tridebleng/src/ipuk/asu.sh"
 wget -O menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu.sh"
 wget -O sshws "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/sshws.sh"
 wget -O trial "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/trial.sh"
-wget -O ssh-menu "https://raw.githubusercontent.com/tridebleng/vip/ipuk/menu_all/ssh-menu.sh"
-wget -O v2ray-menu "https://raw.githubusercontent.com/tridebleng/vip/ipuk/menu_all/v2ray-menu.sh"
-wget -O trojan-menu "https://raw.githubusercontent.com/tridebleng/vip/ipuk/menu_all/trojan-menu.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/tridebleng/src/ipuk/xray/cek-ws.sh
-wget -O about "https://raw.githubusercontent.com/tridebleng/sc/ipuk/ssh/about.sh" 
-wget -O running "https://raw.githubusercontent.com/tridebleng/sc/ipuk/ssh/running.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -306,12 +300,6 @@ chmod +x xp
 chmod +x asu
 chmod +x sshws
 chmod +x trial
-chmod +x ssh-menu
-chmod +x v2ray-menu
-chmod +x trojan-menu
-chmod +x cek-ws
-chmod +x about
-chmod +x running
 cd
 
 
