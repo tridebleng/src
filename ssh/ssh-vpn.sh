@@ -288,6 +288,7 @@ wget -O asu "https://raw.githubusercontent.com/tridebleng/src/ipuk/asu.sh"
 wget -O menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu.sh"
 wget -O sshws "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/sshws.sh"
 wget -O trial "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/trial.sh"
+wget -O running "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/running.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -300,6 +301,7 @@ chmod +x xp
 chmod +x asu
 chmod +x sshws
 chmod +x trial
+chmod +x running
 cd
 
 
