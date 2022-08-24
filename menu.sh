@@ -124,7 +124,7 @@ echo -e " \E[0;41;36m               Settings MENU                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
  [\033[1;36m14\033[0m]  Add-host
  [\033[1;36m15\033[0m]  Gen SSL 
- [\033[1;36m16\033[0m]  Backup 
+ [\033[1;36m16\033[0m]  running 
  [\033[1;36m17\033[0m]  Restore
  [\033[1;36m18\033[0m]  Xol Panel Bot
 "
@@ -189,7 +189,7 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     elif [[ $x -eq 15 ]]; then
        crtv2ray
     elif [[ $x -eq 16 ]]; then
-       bckp
+       running
     elif [[ $x -eq 17 ]]; then
        restore
      elif [[ $x -eq 18 ]]; then
@@ -235,7 +235,7 @@ else
     elif [[ $x -eq 15 ]]; then
        crtv2ray
     elif [[ $x -eq 16 ]]; then
-       bckp
+       running
     elif [[ $x -eq 17 ]]; then
        restore
      elif [[ $x -eq 18 ]]; then
