@@ -79,7 +79,7 @@ Exp=$(curl -sS https://raw.githubusercontent.com/tridebleng/izinvps/ipuk/ip | gr
 fi
 clear
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[0;41;36m     ⇱ AutoScript By Ridwan Project ⇲       \E[0m"
+echo -e " \E[0;41;36m     ⇱ AutoScript By bahenol Project ⇲       \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 echo -e "\e[36m[ SSH WebSocket : ON ]     [ XRAY : ON ] \033[0m"
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
