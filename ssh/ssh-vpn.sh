@@ -292,6 +292,19 @@ wget -O running "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/runni
 wget -O ram "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ram.sh"
 wget -O banner "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/banner.sh"
 wget -O restart "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/restart.sh"
+wget -O ssh-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/ssh-menu.sh"
+wget -O v2ray-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/v2ray-menu.sh"
+wget -O trojan-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/trojan-menu.sh"
+wget -O autokill-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/autokill-menu.sh"
+wget -O about "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/about.sh" 
+wget -O info-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/info-menu.sh"
+wget -O ipsec-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/ipsec-menu.sh"
+wget -O setting-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/setting-menu.sh"
+wget -O ss-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/ss-menu.sh"
+wget -O ssgrpc-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/ssgrpc-menu.sh"
+wget -O sstp-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/sstp-menu.sh"
+wget -O system-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/system-menu.sh"
+wget -O wg-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/wg-menu.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -308,6 +321,19 @@ chmod +x running
 chmod +x ram
 chmod +x banner
 chmod +x restart
+chmod +x ssh-menu
+chmod +x v2ray-menu
+chmod +x trojan-menu
+chmod +x autokill-menu
+chmod +x about
+chmod +x info-menu
+chmod +x ipsec-menu
+chmod +x setting-menu
+chmod +x ss-menu
+chmod +x ssgrpc-menu
+chmod +x sstp-menu
+chmod +x system-menu
+chmod +x wg-menu
 cd
 
 
