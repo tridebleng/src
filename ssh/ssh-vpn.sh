@@ -291,6 +291,7 @@ wget -O trial "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/trial.s
 wget -O running "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/running.sh"
 wget -O ram "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ram.sh"
 wget -O banner "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/banner.sh"
+wget -O restart "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/restart.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -306,6 +307,7 @@ chmod +x trial
 chmod +x running
 chmod +x ram
 chmod +x banner
+chmod +x restart
 cd
 
 
