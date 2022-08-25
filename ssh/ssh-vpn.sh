@@ -290,6 +290,7 @@ wget -O sshws "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/sshws.s
 wget -O trial "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/trial.sh"
 wget -O running "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/running.sh"
 wget -O ram "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ram.sh"
+wget -O banner "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/banner.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -304,6 +305,7 @@ chmod +x sshws
 chmod +x trial
 chmod +x running
 chmod +x ram
+chmod +x banner
 cd
 
 
