@@ -127,6 +127,7 @@ echo -e "\e[36m╘════════════════════�
  [\033[1;36m16\033[0m]  running 
  [\033[1;36m17\033[0m]  Restore
  [\033[1;36m18\033[0m]  ram
+ [\033[1;36m18\033[0m]  restart
 "
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
 echo -ne
@@ -194,6 +195,8 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        restore
      elif [[ $x -eq 18 ]]; then
        ram
+     elif [[ $x -eq 19 ]]; then
+       restart
     else
        menu
     fi
@@ -240,6 +243,8 @@ else
        restore
      elif [[ $x -eq 18 ]]; then
        ram
+     elif [[ $x -eq 19 ]]; then
+       restart
     else
        menu
     fi
