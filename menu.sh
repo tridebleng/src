@@ -127,7 +127,7 @@ echo -e "\e[36m╘════════════════════�
  [\033[1;36m16\033[0m]  running 
  [\033[1;36m17\033[0m]  Restore
  [\033[1;36m18\033[0m]  ram
- [\033[1;36m18\033[0m]  restart
+ [\033[1;36m19\033[0m]  restart
 "
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
 echo -ne
