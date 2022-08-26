@@ -250,7 +250,7 @@ echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 cat> /etc/issue.net << END
 <font color="red"><b>============================</b></font><br> 
-<font color="white"><b>         JANDA_BAHENOL         </b></font><br> 
+<font color="white"><b>         Suci_BAHENOL         </b></font><br> 
 <font color="red"><b>============================</b></font>
 END
 
@@ -289,9 +289,9 @@ wget -O menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu.sh"
 wget -O sshws "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/sshws.sh"
 wget -O trial "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/trial.sh"
 wget -O running "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/running.sh"
-#wget -O ram "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ram.sh"
-#wget -O banner "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/banner.sh"
-#wget -O restart "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/restart.sh"
+wget -O ram "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ram.sh"
+wget -O banner "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/banner.sh"
+wget -O restart "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/restart.sh"
 wget -O ssh-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/ssh-menu.sh"
 wget -O v2ray-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/v2ray-menu.sh"
 wget -O trojan-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/trojan-menu.sh"
