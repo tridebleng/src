@@ -306,6 +306,7 @@ wget -O ssgrpc-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_
 wget -O sstp-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/sstp-menu.sh"
 wget -O system-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/system-menu.sh"
 wget -O wg-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/wg-menu.sh"
+wget -O autoreboot "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/autoreboot.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -335,6 +336,7 @@ chmod +x ssgrpc-menu
 chmod +x sstp-menu
 chmod +x system-menu
 chmod +x wg-menu
+chmod +x autoreboot
 cd
 
 
