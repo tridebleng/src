@@ -47,8 +47,8 @@ cat > /etc/rc.local <<-END
 #!/bin/sh -e
 # rc.local
 # By default this script does nothing.
-exit 0
 asu
+exit 0
 END
 
 # Ubah izin akses
