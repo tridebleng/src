@@ -307,6 +307,19 @@ wget -O sstp-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_al
 wget -O system-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/system-menu.sh"
 wget -O wg-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/wg-menu.sh"
 wget -O autoreboot "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/autoreboot.sh"
+wget -O trojaan "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/trojaan.sh"
+wget -O addtrojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojan/addtrojan.sh"
+wget -O cektrojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojan/cektrojan.sh"
+wget -O deltrojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojan/deltrojan.sh"
+wget -O renewtrojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojan/renewtrojan.sh"
+wget -O addtrgo "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojango/addtrgo.sh"
+wget -O cektrgo "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojango/cektrgo.sh"
+wget -O deltrgo "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojango/deltrgo.sh"
+wget -O renewtrgo "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojango/renewtrgo.sh"
+wget -O add-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/add-tr.sh"
+wget -O cek-ws "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/cek-ws.sh"
+wget -O del-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/del-tr.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/renew-tr.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -337,6 +350,19 @@ chmod +x sstp-menu
 chmod +x system-menu
 chmod +x wg-menu
 chmod +x autoreboot
+chmod +x trojaan
+chmod +x addtrojan
+chmod +x cektrojan
+chmod +x deltrojan
+chmod +x renewtrojan
+chmod +x addtrgo
+chmod +x cektrgo
+chmod +x deltrgo
+chmod +x renewtrgo
+chmod +x add-tr
+chmod +x cek-ws
+chmod +x del-tr
+chmod +x renew-tr
 cd
 
 
