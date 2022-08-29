@@ -103,16 +103,16 @@ echo -e "IP-VPS          :  $IPVPS"
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m                 SSH MENU                   \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
-echo -e " [\033[1;36m01\033[0m]  Add User SSH
- [\033[1;36m02\033[0m]  SSH WS Enable
- [\033[1;36m03\033[0m]  Cek User SSH
- [\033[1;36m04\033[0m]  Del User SSH
- [\033[1;36m05\033[0m]  Renew SSH
- [\033[1;36m06\033[0m]  Member
+echo -e " [\033[1;36m01\033[0m]  panel SSH
+ [\033[1;36m02\033[0m]  panel xray
+ [\033[1;36m03\033[0m]  panel trojan go
+ [\033[1;36m04\033[0m]  panel trojan
+ [\033[1;36m05\033[0m]  panel sstp
+ [\033[1;36m06\033[0m]  setting menu
 \e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m                 XRAY MENU                  \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
- [\033[1;36m07\033[0m]  Add Vmess Account
+ [\033[1;36m07\033[0m]  System menu
  [\033[1;36m08\033[0m]  Add Vless Account
  [\033[1;36m09\033[0m]  Addd Trojan Account
  [\033[1;36m10\033[0m]  Add Sodosok Account
@@ -160,19 +160,19 @@ echo
 echo -ne "Select menu : "; read x
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     if [[ $x -eq 1 ]]; then
-       usernew
+       ssh-menu
     elif [[ $x -eq 2 ]]; then
-       sshws
+       v2ray-menu
     elif [[ $x -eq 3 ]]; then
-       cek
+       trojaan
     elif [[ $x -eq 4 ]]; then
-       hapus
+       trojan-menu
     elif [[ $x -eq 5 ]]; then
-       renew
+       sstp-menu
     elif [[ $x -eq 6 ]]; then
-       member
+       setting-menu
     elif [[ $x -eq 7 ]]; then
-       add-ws
+       system-menu
     elif [[ $x -eq 8 ]]; then
        add-vless
     elif [[ $x -eq 9 ]]; then
@@ -206,19 +206,19 @@ else
        screen -S upds update-script
        menu
     elif [[ $x -eq 1 ]]; then
-       usernew
+       ssh-menu
     elif [[ $x -eq 2 ]]; then
-       sshws
+       v2ray-menu
     elif [[ $x -eq 3 ]]; then
-       cek
+       trojaan
     elif [[ $x -eq 4 ]]; then
-       hapus
+       trojan-menu
     elif [[ $x -eq 5 ]]; then
-       renew
+       sstp-menu
     elif [[ $x -eq 6 ]]; then
-       member
+       setting-menu
     elif [[ $x -eq 7 ]]; then
-       add-ws
+       system-menu
     elif [[ $x -eq 8 ]]; then
        add-vless
     elif [[ $x -eq 9 ]]; then
