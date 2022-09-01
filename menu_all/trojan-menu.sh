@@ -83,22 +83,22 @@ case "$x" in
    ;;
    5 | 05)
    clear
-   add-trgo
+   addtrgo
    break
    ;;
    6 | 06)
    clear
-   del-trgo
+   deltrgo
    break
    ;;
    7 | 07)
    clear
-   renew-trgo
+   renewtrgo
    break
    ;;
    8 | 08)
    clear
-   cek-trgo
+   cektrgo
    break
    ;;
    0 | 00)
