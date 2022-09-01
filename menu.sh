@@ -79,9 +79,9 @@ Exp=$(curl -sS https://raw.githubusercontent.com/tridebleng/izinvps/ipuk/ip | gr
 fi
 clear
 echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[0;41;36m     ⇱ AutoScript By bahenol Project ⇲       \E[0m"
+echo -e " \E[0;41;36m     ⇱ AutoScript By bahenol Project ⇲      \E[0m"
 echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
-echo -e "\e[36m[ SSH WebSocket : ON ]     [ XRAY : ON ] \033[0m"
+echo -e "   \e[36m[ SSH WebSocket : ${GREEN}ON${NC}\e[36m ]     [ XRAY : ${GREEN}ON${NC}\e[36m ] \033[0m"
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m                 INFO SERVER                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
@@ -101,33 +101,24 @@ echo -e "Use Core        :  $rekk"
 echo -e "Current Domain  :  $(cat /etc/$bec/domain)"
 echo -e "IP-VPS          :  $IPVPS"
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 SSH MENU                   \E[0m"
+echo -e " \E[0;41;36m                 PANEL MENU                 \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
-echo -e " [\033[1;36m01\033[0m]  panel SSH
- [\033[1;36m02\033[0m]  panel xray
- [\033[1;36m03\033[0m]  panel trojan go
- [\033[1;36m04\033[0m]  panel trojan
- [\033[1;36m05\033[0m]  panel sstp
- [\033[1;36m06\033[0m]  setting menu
-\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 XRAY MENU                  \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
- [\033[1;36m07\033[0m]  System menu
- [\033[1;36m08\033[0m]  Add Vless Account
- [\033[1;36m09\033[0m]  Addd Trojan Account
- [\033[1;36m10\033[0m]  Add Sodosok Account
- [\033[1;36m11\033[0m]  Cek User Xray
- [\033[1;36m12\033[0m]  Del User Xray
- [\033[1;36m13\033[0m]  Renew User Xray"
+echo -e " [\033[1;36m01\033[0m]  Add User SSH   [\033[1;36m07\033[0m]  Add Vmess Account
+ [\033[1;36m02\033[0m]  SSH WS Enable  [\033[1;36m08\033[0m]  Add Vless Account
+ [\033[1;36m03\033[0m]  Cek User SSH   [\033[1;36m09\033[0m]  Add Trojan Account
+ [\033[1;36m04\033[0m]  Del User SSH   [\033[1;36m10\033[0m]  Add Sdosok Account
+ [\033[1;36m05\033[0m]  Renew SSH      [\033[1;36m11\033[0m]  Cek User Xray
+ [\033[1;36m06\033[0m]  Member         [\033[1;36m12\033[0m]  Del User Xray
+ \033[1;32mScript ARTA MAULANA\033[0m  [\033[1;36m13\033[0m]  Renew User Xray"
 echo -e  "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m               Settings MENU                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
- [\033[1;36m14\033[0m]  Add-host
+ [\033[1;36m14\033[0m]  Setting Menu [${GREEN}Pro${NC}]
  [\033[1;36m15\033[0m]  Gen SSL 
- [\033[1;36m16\033[0m]  running 
- [\033[1;36m17\033[0m]  Restore
- [\033[1;36m18\033[0m]  ram
- [\033[1;36m19\033[0m]  restart
+ [\033[1;36m16\033[0m]  Cek Status ${GREEN}RUNNING${NC}
+ [\033[1;36m17\033[0m]  Reboot VPS ${GREEN}X-Ray${NC}
+ [\033[1;36m18\033[0m]  Restart VPS
+ [\033[1;36m19\033[0m]  ${RED}SEtting Pasword VPS${NC}
 "
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
 echo -ne
@@ -160,19 +151,19 @@ echo
 echo -ne "Select menu : "; read x
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     if [[ $x -eq 1 ]]; then
-       ssh-menu
+       usernew
     elif [[ $x -eq 2 ]]; then
-       v2ray-menu
+       sshws
     elif [[ $x -eq 3 ]]; then
-       trojaan
+       cek
     elif [[ $x -eq 4 ]]; then
-       trojan-menu
+       hapus
     elif [[ $x -eq 5 ]]; then
-       sstp-menu
+       renew
     elif [[ $x -eq 6 ]]; then
-       setting-menu
+       member
     elif [[ $x -eq 7 ]]; then
-       system-menu
+       add-ws
     elif [[ $x -eq 8 ]]; then
        add-vless
     elif [[ $x -eq 9 ]]; then
@@ -180,23 +171,23 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     elif [[ $x -eq 10 ]]; then
        add-ssws
     elif [[ $x -eq 11 ]]; then
-       cek-ws
+       cek-user
     elif [[ $x -eq 12 ]]; then
        del-user
     elif [[ $x -eq 13 ]]; then
        renew-xray
     elif [[ $x -eq 14 ]]; then
-       add-host
+       setting-menu
     elif [[ $x -eq 15 ]]; then
        crtv2ray
     elif [[ $x -eq 16 ]]; then
        running
     elif [[ $x -eq 17 ]]; then
-       restore
-     elif [[ $x -eq 18 ]]; then
-       ram
-     elif [[ $x -eq 19 ]]; then
+       reboot
+    elif [[ $x -eq 18 ]]; then
        restart
+    elif [[ $x -eq 19 ]]; then
+       passwd
     else
        menu
     fi
@@ -206,19 +197,19 @@ else
        screen -S upds update-script
        menu
     elif [[ $x -eq 1 ]]; then
-       ssh-menu
+       usernew
     elif [[ $x -eq 2 ]]; then
-       v2ray-menu
+       sshws
     elif [[ $x -eq 3 ]]; then
-       trojaan
+       cek
     elif [[ $x -eq 4 ]]; then
-       trojan-menu
+       hapus
     elif [[ $x -eq 5 ]]; then
-       sstp-menu
+       renew
     elif [[ $x -eq 6 ]]; then
-       setting-menu
+       member
     elif [[ $x -eq 7 ]]; then
-       system-menu
+       add-ws
     elif [[ $x -eq 8 ]]; then
        add-vless
     elif [[ $x -eq 9 ]]; then
@@ -226,25 +217,23 @@ else
     elif [[ $x -eq 10 ]]; then
        add-ssws
     elif [[ $x -eq 11 ]]; then
-       cek-ws
+       cek-user
     elif [[ $x -eq 12 ]]; then
        del-user
     elif [[ $x -eq 13 ]]; then
        renew-xray
-    elif [[ $x -eq 13 ]]; then
-       renew-xray
     elif [[ $x -eq 14 ]]; then
-       add-host
+       setting-menu
     elif [[ $x -eq 15 ]]; then
        crtv2ray
     elif [[ $x -eq 16 ]]; then
        running
     elif [[ $x -eq 17 ]]; then
-       restore
-     elif [[ $x -eq 18 ]]; then
-       ram
-     elif [[ $x -eq 19 ]]; then
+       reboot
+    elif [[ $x -eq 18 ]]; then
        restart
+    elif [[ $x -eq 19 ]]; then
+       passwd
     else
        menu
     fi
