@@ -317,7 +317,7 @@ wget -O cektrgo "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojango/
 wget -O deltrgo "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojango/deltrgo.sh"
 wget -O renewtrgo "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojango/renewtrgo.sh"
 wget -O add-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/add-tr.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/cek-ws.sh"
+wget -O cek-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/cek-tr.sh"
 wget -O del-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/del-tr.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/renew-tr.sh"
 wget -O trial-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/trial-menu.sh"
@@ -361,7 +361,7 @@ chmod +x cektrgo
 chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x add-tr
-chmod +x cek-ws
+chmod +x cek-tr
 chmod +x del-tr
 chmod +x renew-tr
 chmod +x trial-menu
