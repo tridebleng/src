@@ -119,6 +119,7 @@ echo -e "\e[36m╘════════════════════�
  [\033[1;36m17\033[0m]  Reboot VPS ${GREEN}X-Ray${NC}
  [\033[1;36m18\033[0m]  Restart VPS
  [\033[1;36m19\033[0m]  ${RED}SEtting Pasword VPS${NC}
+ [\033[1;36m20\033[0m]  ${BLUE}SEtting Auto Reboot${NC}
 "
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
 echo -ne
@@ -188,6 +189,8 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        restart
     elif [[ $x -eq 19 ]]; then
        passwd
+    elif [[ $x -eq 20 ]]; then
+       autoreboot
     else
        menu
     fi
@@ -234,6 +237,8 @@ else
        restart
     elif [[ $x -eq 19 ]]; then
        passwd
+    elif [[ $x -eq 20 ]]; then
+       autoreboot
     else
        menu
     fi
