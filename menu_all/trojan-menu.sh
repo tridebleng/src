@@ -101,6 +101,14 @@ echo -e "
 [\033[0;32m03\033[0m] • Extending Trojan GRPC/WS Account Active Life
 [\033[0;32m04\033[0m] • Check User Login Trojan GRPC/WS
 
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+chgck_pid
+echo -e "
+[\033[0;32m05\033[0m] • Create Trojan-GO Account
+[\033[0;32m06\033[0m] • Deleting Trojan-GO Account
+[\033[0;32m07\033[0m] • Extending Trojan-GO Account Active Life
+[\033[0;32m08\033[0m] • Check User Login Trojan-GO
+
 [00] • Back to Main Menu \033[1;32m<\033[1;33m<\033[1;31m<\033[1;31m"
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
