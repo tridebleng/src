@@ -321,6 +321,7 @@ wget -O cek-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/c
 wget -O del-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/del-tr.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/renew-tr.sh"
 wget -O trial-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/trial-menu.sh"
+wget -O status "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/status.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -365,6 +366,7 @@ chmod +x cek-tr
 chmod +x del-tr
 chmod +x renew-tr
 chmod +x trial-menu
+chmod +x status
 cd
 
 
