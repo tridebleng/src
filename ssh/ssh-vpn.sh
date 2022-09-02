@@ -322,6 +322,13 @@ wget -O del-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/d
 wget -O renew-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojanws/renew-tr.sh"
 wget -O trial-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/trial-menu.sh"
 wget -O status "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/status.sh"
+wget -O ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/ss.sh"
+wget -O add-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/add-ss.sh"
+wget -O cek-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/cek-ss.sh"
+wget -O del-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/del-ss.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/renew-ss.sh"
+wget -O trial-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/trial-ss.sh"
+
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -367,6 +374,12 @@ chmod +x del-tr
 chmod +x renew-tr
 chmod +x trial-menu
 chmod +x status
+chmod +x ss
+chmod +x add-ss
+chmod +x cek-ss
+chmod +x del-ss
+chmod +x renew-ss
+chmod +x trial-ss
 cd
 
 
