@@ -231,6 +231,7 @@ sleep 2
 clear
 wget https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/tridebleng/src/ipuk/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/ss.sh && chmod +x sstp.sh && screen -S ss ./ss.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
