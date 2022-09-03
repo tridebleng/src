@@ -328,7 +328,9 @@ wget -O cek-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsock
 wget -O del-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/del-ss.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/renew-ss.sh"
 wget -O trial-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowsocks/trial-ss.sh"
-
+wget -O ohp-ssh "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ohp-ssh.sh"
+wget -O ohp-db "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ohp-db.sh"
+wget -O ohp-opn "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ohp-opn.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -380,6 +382,9 @@ chmod +x cek-ss
 chmod +x del-ss
 chmod +x renew-ss
 chmod +x trial-ss
+chmod +x ohp-ssh
+chmod +x ohp-db
+chmod +x ohp-opn
 cd
 
 
