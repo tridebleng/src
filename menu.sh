@@ -1,6 +1,7 @@
 #!/bin/bash
 RED='\033[0;31m'
 NC='\033[0m'
+yl='\e[32;1m'
 GREEN='\033[0;32m'
 ORANGE='\033[0;33m'
 BLUE='\033[0;34m'
@@ -103,23 +104,23 @@ echo -e "IP-VPS          :  $IPVPS"
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m                 PANEL MENU                 \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
-echo -e " [\033[1;36m01\033[0m]  Add User SSH   [\033[1;36m07\033[0m]  Add Vmess Account
- [\033[1;36m02\033[0m]  SSH WS Enable  [\033[1;36m08\033[0m]  Add Vless Account
- [\033[1;36m03\033[0m]  Cek User SSH   [\033[1;36m09\033[0m]  Add Trojan Account
- [\033[1;36m04\033[0m]  Del User SSH   [\033[1;36m10\033[0m]  Add Sdosok Account
- [\033[1;36m05\033[0m]  Renew SSH      [\033[1;36m11\033[0m]  Cek User Xray
- [\033[1;36m06\033[0m]  Member         [\033[1;36m12\033[0m]  Del User Xray
- \033[1;32mScript ARTA MAULANA\033[0m  [\033[1;36m13\033[0m]  Renew User Xray"
+echo -e " [\033[1;36m01\033[0m] Add User SSH   [\033[1;36m07\033[0m]  Add Vmess Account
+ [\033[1;36m02\033[0m] SSH WS Enable  [\033[1;36m08\033[0m] Add Vless Account
+ [\033[1;36m03\033[0m] Cek User SSH   [\033[1;36m09\033[0m] Add Trojan Account
+ [\033[1;36m04\033[0m] Del User SSH   [\033[1;36m10\033[0m] Add Sdosok Account
+ [\033[1;36m05\033[0m] Renew SSH      [\033[1;36m11\033[0m] Cek User Xray
+ [\033[1;36m06\033[0m] Member         [\033[1;36m12\033[0m] Del User Xray
+ ${GREEN}Script ARTA MAULANA\033[0m [\033[1;36m13\033[0m] Renew User Xray"
 echo -e  "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m               Settings MENU                \E[0m"
 echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
- [\033[1;36m14\033[0m]  Setting Menu [${GREEN}Pro${NC}]
- [\033[1;36m15\033[0m]  Gen SSL 
- [\033[1;36m16\033[0m]  Cek Status ${GREEN}RUNNING${NC}
- [\033[1;36m17\033[0m]  Reboot VPS ${GREEN}X-Ray${NC}
- [\033[1;36m18\033[0m]  Restart VPS
- [\033[1;36m19\033[0m]  ${RED}SEtting Pasword VPS${NC}
- [\033[1;36m20\033[0m]  ${BLUE}SEtting Auto Reboot${NC}
+ [\033[1;36m14\033[0m] Setting Menu [${GREEN}Pro${NC}] [\033[1;36m21\033[0m] Cek Pkt bulanan
+ [\033[1;36m15\033[0m] Gen SSL            [\033[1;36m21\033[0m] Cek Pkt \033[1;33mHarian${NC}
+ [\033[1;36m16\033[0m] Cek Status ${GREEN}RUNNING${NC}
+ [\033[1;36m17\033[0m] Reboot VPS ${GREEN}X-Ray${NC}
+ [\033[1;36m18\033[0m] Restart VPS
+ [\033[1;36m19\033[0m] ${RED}SEtting Pasword VPS${NC}
+ [\033[1;36m20\033[0m] ${BLUE}SEtting Auto Reboot${NC}
 "
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
 echo -ne
@@ -191,6 +192,10 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        passwd
     elif [[ $x -eq 20 ]]; then
        autoreboot
+    elif [[ $x -eq 21 ]]; then
+       vnstat
+    elif [[ $x -eq 22 ]]; then
+       vnstat -d
     else
        menu
     fi
@@ -239,6 +244,10 @@ else
        passwd
     elif [[ $x -eq 20 ]]; then
        autoreboot
+    elif [[ $x -eq 21 ]]; then
+       vnstat
+    elif [[ $x -eq 22 ]]; then
+       vnstat -d
     else
        menu
     fi
