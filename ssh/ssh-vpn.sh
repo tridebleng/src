@@ -47,7 +47,6 @@ cat > /etc/rc.local <<-END
 #!/bin/sh -e
 # rc.local
 # By default this script does nothing.
-asu
 exit 0
 END
 
