@@ -164,28 +164,25 @@ fi
 # systemctl enable ssrmu && systemctl restart ssrmu
 
 clear
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[44;1;39m      ⇱ Service ALL Status ⇲       \E[0m"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "
-[ SSH & VPN ]             : $ressh
-[ STUNNEL ]               : $resst
-[ WIREGUARD ]             : $reswg
-[ L2TP ]                  : $resl2tp
-[ PPTP ]                  : $respptp
-[ SSTP ]                  : $resstp
-[ SSR ]                   : $ressr
-[ ShadowSocks]            : $resss"
-if [ "$rekk" != "xray" ]; then
-echo -e "[ V2RAY ]                 : $resv2r"
+${yl}
+=======(Script Auto instal: ARTA MAULANA)========"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[44;1;39m             ⇱ Service ALL Status ⇲              \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "
+   [ SSH & VPN ]             : $ressh
+   [ STUNNEL ]               : $resst
+   [ ShadowSocks]            : $resss"
+if    [ "$rekk" != "xray" ]; then
+echo -e "   [ V2RAY ]                 : $resv2r"
 else
-echo -e "[ XRAY ]                  : $resv2r"
+echo -e "   [ XRAY ]                  : $resv2r"
 fi
-echo -e "[ VLESS ]                 : $resvles
-[ TROJAN ]                : $restr
-[ TROJAN-GO ]             : $restrgo
+echo -e "   [ VLESS ]                 : $resvles
+   [ TROJAN WS ]             : $restr
 "
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
