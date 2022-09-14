@@ -79,13 +79,9 @@ else
 Exp=$(curl -sS https://raw.githubusercontent.com/tridebleng/izinvps/ipuk/ip | grep $MYIP | awk '{print $3}')
 fi
 clear
-echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
-echo -e " \E[0;41;36m     ⇱ AutoScript By bahenol Project ⇲      \E[0m"
-echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
-echo -e "   \e[36m[ SSH WebSocket : ${GREEN}ON${NC}\e[36m ]     [ XRAY : ${GREEN}ON${NC}\e[36m ] \033[0m"
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 INFO SERVER                \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
+echo -e "${CYAN}╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m${NC}"
+echo -e " \E[44;1;39m            ⇱ BIGETRON RED ALIENS ⇲             \E[0m"
+echo -e "${CYAN}╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛\033[0m${NC}"
 uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
 upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
@@ -96,31 +92,30 @@ serverV=$( curl -sS https://raw.githubusercontent.com/tridebleng/src/ipuk/versi)
 if [ "$cekup" = "day" ]; then
 echo    -e   "System Uptime   :  $uphours $upminutes $uptimecek"
 else
-echo -e   "System Uptime   :  $uphours $upminutes"
+echo -e   "System Uptime   :  \033[1;33m$uphours $upminutes${NC}"
 fi
 echo -e "Use Core        :  $rekk"
-echo -e "Current Domain  :  $(cat /etc/$bec/domain)"
+echo -e "Current Domain  :  \033[1;36m$(cat /etc/$bec/domain)${NC}"
 echo -e "IP-VPS          :  $IPVPS"
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 PANEL MENU                 \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
-echo -e " [\033[1;36m01\033[0m] Add User SSH   [\033[1;36m07\033[0m]  Add Vmess Account
- [\033[1;36m02\033[0m] SSH WS Enable  [\033[1;36m08\033[0m] Add Vless Account
- [\033[1;36m03\033[0m] Cek User SSH   [\033[1;36m09\033[0m] Add Trojan Account
- [\033[1;36m04\033[0m] Del User SSH   [\033[1;36m10\033[0m] Add Sdosok Account
- [\033[1;36m05\033[0m] Renew SSH      [\033[1;36m11\033[0m] Cek User Xray
- [\033[1;36m06\033[0m] Member         [\033[1;36m12\033[0m] Del User Xray
- ${GREEN}Script ARTA MAULANA\033[0m [\033[1;36m13\033[0m] Renew User Xray"
-echo -e  "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m               Settings MENU                \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
- [\033[1;36m14\033[0m] Setting Menu [${GREEN}Pro${NC}] [\033[1;36m21\033[0m] Cek Pkt bulanan
- [\033[1;36m15\033[0m] Gen SSL            [\033[1;36m21\033[0m] Cek Pkt \033[1;33mHarian${NC}
- [\033[1;36m16\033[0m] Cek Status ${GREEN}RUNNING${NC}
- [\033[1;36m17\033[0m] Reboot VPS ${GREEN}X-Ray${NC}
- [\033[1;36m18\033[0m] Restart VPS
- [\033[1;36m19\033[0m] ${RED}SEtting Pasword VPS${NC}
- [\033[1;36m20\033[0m] ${BLUE}SEtting Auto Reboot${NC}
+echo -e "     \e[36m[ \033[1;31mSSH WebSocket : ${GREEN}ON${NC}\e[36m ]     [ \033[1;31mXRAY : ${GREEN}ON${NC}\e[36m ] \033[0m"
+echo -e "\e[36m╒════════════════════════════════════════════════╕\033[0m"
+echo -e " \E[44;1;39m                   PANEL MENU                   \E[0m"
+echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m"
+echo -e " [\033[1;36m01\033[0m] Add User SSH       [\033[1;36m07\033[0m] Add Vmess Account
+ [\033[1;36m02\033[0m] Trial SSH          [\033[1;36m08\033[0m] Add Vless Account
+ [\033[1;36m03\033[0m] Cek User SSH       [\033[1;36m09\033[0m] Add Trojan Account
+ [\033[1;36m04\033[0m] Del User SSH       [\033[1;36m10\033[0m] Add Sdosok Account
+ [\033[1;36m05\033[0m] Renew SSH          [\033[1;36m11\033[0m] Cek User Xray
+ [\033[1;36m06\033[0m] Member \033[1;33mAKTIF${NC}       [\033[1;36m12\033[0m] Del User Xray
+ \033[1;32mScript \033[1;36mARTA MAULANA.\033[0m    [\033[1;36m13\033[0m] Renew User Xray"
+echo -e  "\e[36m╒════════════════════════════════════════════════╕\033[0m"
+echo -e " \E[44;1;39m                 Settings MENU                  \E[0m"
+echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m
+ [\033[1;36m14\033[0m] Setting Menu [\033[1;32mPro${NC}] [\033[1;36m19\033[0m] \033[1;31mSEtting Pasword VPS${NC}
+ [\033[1;36m15\033[0m] Gen cert SSL       [\033[1;36m20\033[0m] \033[1;33mSEtting Auto Reboot${NC}
+ [\033[1;36m16\033[0m] Cek Status \033[1;32mRUNNING${NC} [\033[1;36m21\033[0m] Cek Pkt bulanan
+ [\033[1;36m17\033[0m] Reboot VPS \033[1;36mX-Ray${NC}   [\033[1;36m22\033[0m] Cek Pkt \033[1;33mHarian${NC}
+ [\033[1;36m18\033[0m] Restart VPS        [\033[1;36m23\033[0m] Cek Info \033[1;33mVPS${NC}
 "
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
 echo -ne
@@ -129,13 +124,12 @@ echo -e "[\033[1;32m999\033[0m] • \033[0;31mUpdate Available ! Go choice 69 to
 echo ""
 fi
 echo -e "\033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
-echo ""
 #echo -e "\e[36m╘════════════════════════════════════════════════════╛\033[0m"
-echo -e "\e[36m╒═════════════════════════════════════════════╕\033[0m"
+echo -e "\e[36m╒════════════════════════════════════════════════╕\033[0m"
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
-echo -e "Version       :\033[1;36m $(cat /opt/.ver) Latest Version\e[0m"
-echo -e "Client Name   : $Name"
-echo -e "Expiry script : $Exp"
+   echo -e "Version       :\033[1;36m $(cat /opt/.ver) Stabile Version\e[0m"
+   echo -e "Client Name   : \033[1;33m$Name${NC}"
+   echo -e "Expiry script : \033[1;33m$Exp${NC}"
 rm -f /home/needupdate > /dev/null 2>&1
 else
 rm /dev/.permiss > /dev/null 2>&1
@@ -148,14 +142,14 @@ curl -sS https://raw.githubusercontent.com/tridebleng/src/ipuk/clgshow
 echo -e "
 "
 fi
-echo -e "\e[36m╘═════════════════════════════════════════════╛\033[0m"
+echo -e "\e[36m╘════════════════════════════════════════════════╛\033[0m"
 echo
 echo -ne "Select menu : "; read x
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     if [[ $x -eq 1 ]]; then
        usernew
     elif [[ $x -eq 2 ]]; then
-       sshws
+       trial
     elif [[ $x -eq 3 ]]; then
        cek
     elif [[ $x -eq 4 ]]; then
@@ -196,6 +190,8 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        vnstat
     elif [[ $x -eq 22 ]]; then
        vnstat -d
+    elif [[ $x -eq 23 ]]; then
+       info-menu
     else
        menu
     fi
@@ -207,7 +203,7 @@ else
     elif [[ $x -eq 1 ]]; then
        usernew
     elif [[ $x -eq 2 ]]; then
-       sshws
+       trial
     elif [[ $x -eq 3 ]]; then
        cek
     elif [[ $x -eq 4 ]]; then
@@ -248,6 +244,8 @@ else
        vnstat
     elif [[ $x -eq 22 ]]; then
        vnstat -d
+    elif [[ $x -eq 23 ]]; then
+       info-menu
     else
        menu
     fi
