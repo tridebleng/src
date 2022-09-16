@@ -286,7 +286,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT RIDWAN ]-===================="
+echo "=====================-[ SCRIPT ARTA MAULANA ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -328,7 +328,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By RIDWAN ]-==============="
+echo "===============-[ Script Created By ARTA MAULANA ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
