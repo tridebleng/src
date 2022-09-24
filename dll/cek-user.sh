@@ -1,21 +1,15 @@
 #!/bin/bash
-dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-biji=date +"%Y-%m-%d" -d "$dateFromServer"
-#########################
-
 clear
 echo -n > /tmp/other.txt
-data=( cat /etc/xray/config.json | grep '^#' | cut -d ' ' -f 2 | sort | uniq);
-
+data=( `cat /etc/xray/config.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq`);
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\\E[0;41;36m         XRAY User Login          \E[0m"
+echo -e "\E[44;1;39m       ⇱ Vmess User Login ⇲        \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-
 for akun in "${data[@]}"
 if [[ -z "$akun" ]]; then
 akun="tidakada"
 echo -n > /tmp/ipvmess.txt
-data2=( cat /var/log/xray/access.log | tail -n 500 | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | sort | uniq);
+data2=( `cat /var/log/xray/access.log | tail -n 500 | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | sort | uniq`);
 for ip in "${data2[@]}"
 jum=$(cat /var/log/xray/access.log | grep -w "$akun" | tail -n 500 | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | grep -w "$ip" | sort | uniq)
 if [[ "$jum" = "$ip" ]]; then
@@ -30,13 +24,25 @@ if [[ -z "$jum" ]]; then
 echo > /dev/null
 else
 jum2=$(cat /tmp/ipvmess.txt | nl)
-
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "user : $akun";
-echo -e "$jum2";
+echo -e "$COLOR1
+${NC}   user : $akun";
+echo -e "$COLOR1
+${NC}   $jum2";
 rm -rf /tmp/ipvmess.txt
 done
 rm -rf /tmp/other.txt
+echo -e "$COLOR1
+${NC}" 
+echo -e "$COLOR1
+ BY 
+${NC}"
+echo -e "$COLOR1
+${NC}              
+ WWW.DOTYCAT.COM 
+                $COLOR1
+$NC"
+echo -e "$COLOR1
+${NC}" 
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "   Press any key to back on menu"
 menu-vmess
