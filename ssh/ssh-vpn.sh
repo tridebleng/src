@@ -330,7 +330,7 @@ wget -O trial-ss "https://raw.githubusercontent.com/tridebleng/src/ipuk/shadowso
 wget -O ohp-ssh "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ohp-ssh.sh"
 wget -O ohp-db "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ohp-db.sh"
 wget -O ohp-opn "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/ohp-opn.sh"
-wget -O cek-misv "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/cek-misv.sh"
+wget -O cek-user "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/cek-user.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
@@ -385,7 +385,7 @@ chmod +x trial-ss
 chmod +x ohp-ssh
 chmod +x ohp-db
 chmod +x ohp-opn
-chmod +x cek-misv
+chmod +x cek-user
 cd
 
 
