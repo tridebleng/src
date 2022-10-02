@@ -306,7 +306,7 @@ wget -O sstp-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_al
 wget -O system-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/system-menu.sh"
 wget -O wg-menu "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/wg-menu.sh"
 wget -O autoreboot "https://raw.githubusercontent.com/tridebleng/src/ipuk/dll/autoreboot.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/menu-trojan.sh"
+#wget -O menu-trojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/menu_all/menu-trojan.sh"
 wget -O ceklim "https://raw.githubusercontent.com/tridebleng/src/ipuk/ssh/ceklim.sh"
 #wget -O cektrojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojan/cektrojan.sh"
 #wget -O deltrojan "https://raw.githubusercontent.com/tridebleng/src/ipuk/trojan/deltrojan.sh"
